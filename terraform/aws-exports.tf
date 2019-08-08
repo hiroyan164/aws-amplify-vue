@@ -8,6 +8,8 @@ const awsmobile = {
     "aws_user_pools_id": "${aws_cognito_user_pool.userpool.id}",
     "aws_user_pools_web_client_id": "${aws_cognito_user_pool_client.webclient.id}",
     "oauth": {},
+    "aws_user_files_s3_bucket": "${aws_s3_bucket.storage_bucket.bucket}",
+    "aws_user_files_s3_bucket_region": "${var.aws_default_region}",
 };
 export default awsmobile;
 EOF
